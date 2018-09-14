@@ -1,0 +1,33 @@
+body.single {
+  .projectTop {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .container {
+      background: white;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: -38px;
+      h1 {
+        color: $primaryColor;
+      }
+      span {
+        display: inline-block;
+        font-size: 12px;
+      }
+      .projectLocation {
+        float: right;
+      }
+    }
+  }
+  .projectContent {
+    p.strong {
+      color: $primaryColor;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  }
+}

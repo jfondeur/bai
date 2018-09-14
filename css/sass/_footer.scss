@@ -1,0 +1,26 @@
+footer.footer {
+  div[class*="footer"] {
+    width: calc(70% / 4);
+    text-align: left;
+    .footerLogo {
+      width: 70%;
+    }
+    a {
+      color: initial;
+      font-size: 14px;
+    }
+  }
+  .newsletter {
+    text-align: left;
+    width: 30% !important;
+    p {
+      font-size: 14px;
+    }
+  }
+  .copyright {
+    font-size: 14px;
+    a {
+      color: $primaryColor;
+    }
+  }
+}
