@@ -2,11 +2,13 @@
 /* Template name: Project */ 
 get_header();
 $id = get_the_id();
+echo $id;
 if($id == 85):
     $catName = "EB5";
 elseif($id == 108 ):
     $catName = "Equity";
 endif;
+echo $catName
  ?>
 
  <section>
