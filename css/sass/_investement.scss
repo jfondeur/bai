@@ -12,4 +12,13 @@ body.page-template-page-investment {
       color: white;
     }
   }
+  .card {
+    ul {
+      .benefits {
+        i {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
 }

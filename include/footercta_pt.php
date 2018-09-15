@@ -1,4 +1,4 @@
-<section class="getStartedModule py-5 my-5">
+<section class="getStartedModule bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-8 text-center">

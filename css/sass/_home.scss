@@ -1,7 +1,14 @@
 body.page-id-6 {
+  section {
+    margin: 50px 0;
+    padding: 100px 0;
+  }
+
   .baiHero {
     min-height: 500px;
     display: flex;
+    padding: 0;
+    margin: 0;
   }
   .homeHero {
     h2 {
@@ -14,5 +21,8 @@ body.page-id-6 {
 
   img.attachment-project {
     height: initial !important;
+  }
+  h4 {
+    margin-bottom: 15px;
   }
 }

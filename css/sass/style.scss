@@ -12,11 +12,40 @@
 */
 
 @import url("node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import "mixin";
+
+//===========
+//Global
+//===========
 
 //variables
 $primaryColor: #6b4c2d;
 
+//fonts
+// $headingFont: "Montserrat", sans-serif;
+$bodyFont: "Quattrocento", serif;
+// $headingFont: 'Fanwood Text', serif;
+$headingFont: "Oswald", sans-serif;
 // Typefaces
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $headingFont;
+}
+p,
+span,
+li {
+  font-family: $bodyFont;
+  font-size: 16px;
+  line-height: 1.8;
+}
+button,
+a {
+  font-family: $bodyFont;
+  font-size: 16px;
+}
 .brown {
   color: $primaryColor;
 }
@@ -38,6 +67,12 @@ img {
   }
 }
 
+.badge-primary {
+  background-image: linear-gradient(45deg, #6b4c2d 0%, #967857 100%);
+  border-color: $primaryColor;
+  padding: 5px 10px;
+}
+
 .btn-outline-primary {
   color: $primaryColor;
   border-color: $primaryColor;
@@ -49,8 +84,40 @@ img {
 }
 
 .getStartedModule {
+  margin: 50px 0;
+  padding: 100px 0;
   form {
     justify-content: center;
+  }
+}
+
+.infusion-form.form-inline {
+  .form-control {
+    margin-right: 0 !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    font-size: 14px;
+    color: $primaryColor;
+  }
+  .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+//Card
+.card {
+  overflow: hidden;
+  border-radius: 14px;
+}
+//Project
+.projectsModule {
+  .card {
+    .card-body {
+      .badge {
+        margin-bottom: 0 !important;
+      }
+    }
   }
 }
 

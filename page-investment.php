@@ -36,8 +36,9 @@ get_header();
                                 if( have_rows('benefits') ):
                                     // loop through the rows of data
                                     while ( have_rows('benefits') ) : the_row();
-                                        // display a sub field value
-                                        echo '<li><i class="fa"></i>'.the_sub_field('benefit').'</li>';
+                                    ?>
+                                        <li class="benefits"><i class="fas fa-check-circle"></i> <?php the_sub_field('benefit');?></li>
+                                    <?php
                                     endwhile;
                                 else :
                                     // no rows found
@@ -89,7 +90,7 @@ get_header();
                                         </a>
                                         <p class="card-text"><?php echo $location->name; ?></p>
                                     </div>
-                                    <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
+                                    <p class="card-text badge badge-primary"><?php echo $c[0]->cat_name; ?></p>
                                 </div>
                             </div>
                         </div>

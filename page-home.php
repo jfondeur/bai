@@ -17,7 +17,7 @@
     </section>
 
     <!-- projects -->
-    <section class="projectsModule py-5 my-5">
+    <section class="projectsModule bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -48,7 +48,7 @@
             ?>
                 <!-- Custom loop -->
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <a href="<?php echo $link; ?>">
                             <img class="card-img-top" src="<?php echo esc_url($project_img_url) ?>" alt="Card image cap">
                         </a>
@@ -57,7 +57,7 @@
                                 <a href="<?php echo $link ?>" class="brown"><h5 class="card-title"><?php echo $project_title;?></h5></a>
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
-                            <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
+                            <p class="card-text badge badge-primary"><?php echo $c[0]->cat_name; ?></p>
                         </div>
                     </div>
                 </div>
@@ -70,15 +70,15 @@
     </section>
 
     <!-- why to invest -->
-    <section class="py-5 my-5">
+    <section class="">
         <div class="container homeInvestment">
             <div class="row">
                 <div class="col-md-4">
                     <h4 class="brown"><?php the_field('sales_pitch_heading_2') ?></h4>
-                    <span class="text-justify"><?php the_field('sales_pitch_text_2') ?> </span>
+                    <span class=""><?php the_field('sales_pitch_text_2') ?> </span>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <!-- Image goes here -->
                         <!-- Image goes here -->
                          <?php 
@@ -92,20 +92,20 @@
                         img('investment_eb5_image', 'project');
                         ?>
                         <!-- Image goes here -->
-                        <div class="card-body text-center">
-                            <h5 class="card-title">EB5</h5>
+                        <div class="card-body">
+                            <h5 class="card-title brown">EB5</h5>
                             <p class="card-text"><?php the_field('investment_eb-5') ?></p>
                             <a href="<?php echo home_url();?>/?page_id=51" class="btn btn-primary btn-sm">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <!-- Image goes here -->
                         <?php img('investment_equity_image', 'project');?>
                         <!-- Image goes here -->
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Equity</h5>
+                        <div class="card-body">
+                            <h5 class="card-title brown">Equity</h5>
                             <p class="card-text"><?php the_field('investment_equity') ?></p>
                             <a href="<?php echo home_url();?>/?page_id=102" class="btn btn-primary btn-sm">Learn more</a>
                         </div>

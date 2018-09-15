@@ -1,10 +1,53 @@
-.navbar {
-  .navbar-brand {
-    img {
-      max-width: 120px;
+header {
+  background: white;
+  .navbar {
+    .navbar-brand {
+      img {
+        max-width: 120px;
+      }
     }
-  }
-  input.form-control {
-    padding: 0 10px;
+    #menu-header {
+      @include breakpoint(md) {
+        margin-right: 20px;
+        li {
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    input.form-control {
+      padding: 0 10px;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .dropdown-menu {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      padding: 0;
+      border-color: whitesmoke;
+      border-top: 0;
+      .dropdown-item {
+        @include breakpoint(md) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        &:hover {
+          background: $primaryColor;
+          color: white;
+        }
+      }
+      .dropdown-item.active {
+        background: $primaryColor;
+        color: white;
+      }
+    }
+    //Boostrap menu hover
+    .dropdown:hover .dropdown-menu {
+      @include breakpoint(md) {
+        display: block;
+      }
+    }
   }
 }
