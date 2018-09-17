@@ -6,8 +6,8 @@ get_header();
  <section class="container py-5">
      <div class="row">
          <div class="col-md-12 text-center">
-             <h1 class="brown">Entre em contato com BAI Capital</h1>
-             <p class="mt-2 mb-5">Preencha o formulário abaixo e responderemos a sua solicitação em breve</p>
+             <h1 class="brown"><?php the_field('contact_title')?></h1>
+             <p class="mt-2 mb-5"><?php the_field('contact_subtitle')?></p>
          </div>
      </div>
      <div class="row justify-content-center">
