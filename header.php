@@ -38,7 +38,7 @@
         </script>
 
 	</head>
-	<body <?php body_class(); ?>>
+  <body <?php body_class(); ?>>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MJ8SVL"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -78,3 +78,9 @@
     </nav>
   </div>
 </header>
+<?php 
+// if (isset($_COOKIE['bai_utm'])) {
+//     echo 'utm are set';
+// }
+//print_r( $_COOKIE[bai_utm] );
+?>

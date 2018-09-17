@@ -509,5 +509,61 @@ function create_location_tax() {
 
 }
 add_action( 'init', 'create_location_tax' );
+
+// Utm tracking
+$sources = array(
+    source => $_GET['utm_source'],
+    medium => $_GET['utm_medium'],
+    campaign => $_GET['utm_campaign'],
+    term => $_GET['utm_term'],
+    content =>  $_GET['utm_content'],
+);
+
+function bai_set_utm(){
+    $bai_utm = array(
+        source => $_GET['utm_source'],
+        medium => $_GET['utm_medium'],
+        campaign => $_GET['utm_campaign'],
+        term => $_GET['utm_term'],
+        content =>  $_GET['utm_content'],
+    );
     
+    if(isset($_COOKIE['bai_utm_params'])) {
+        function bai_get_utm_params(){
+            $bai_utm_cookies = $_COOKIE['bai_utm_params'];
+            return $bai_utm_cookies+"yes cookies";
+        }
+    } else {
+        function bai_get_utm_params(){
+            $bai_utm_cookies = $bai_utm;
+            return $bai_utm_cookies+"no cookies";
+        }
+        //setCookies
+        setcookie('bai_utm[source]',  $bai_utm['source'], time()+2592000);
+        setcookie('bai_utm[medium]',  $bai_utm['medium'], time()+2592000);
+        setcookie('bai_utm[campaign]',  $bai_utm['campaign'], time()+2592000);
+        setcookie('bai_utm[term]',  $bai_utm['term'], time()+2592000);
+        setcookie('bai_utm[content]',  $bai_utm['content'], time()+2592000);
+    }
+}
+add_action('init', 'bai_set_utm');
+
+if (isset($_COOKIE['bai_utm'])) {
+    global $sources;
+    foreach ($_COOKIE['bai_utm'] as $name => $value) {
+        $name = htmlspecialchars($name);
+        $value = htmlspecialchars($value);
+         //echo "$name : $value <br />\n";
+        $utms[] = $value;
+    }
+}elseif(isset($sources)) {
+    foreach ($sources as $name => $value) {
+        $name = htmlspecialchars($name);
+        $value = htmlspecialchars($value);
+         //echo "$name : $value <br />\n";
+        $utms[] = $value;
+    }
+    
+}
+
 ?>
