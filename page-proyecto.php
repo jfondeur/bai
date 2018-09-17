@@ -14,7 +14,7 @@ endif;
          <div class="row">
              <div class="col-md-12 text-center">
                  <h1 class="brown"><?php the_title(); ?></h1>
-                 <p class="">Find a project bellow</p>
+                 <p class="">Invista em Real Estate nos Estados Unidos com BAI Capital</p>
                  <!-- <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary">All</button>
                     <button type="button" class="btn btn-secondary">EB5</button>
