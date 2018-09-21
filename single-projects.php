@@ -57,16 +57,37 @@ $pc = get_the_category();
                         </div>
                     </div>
                     <div class="col-md-4 border-left">
-                        <h5 class="brown">Brochure</h5>
+                        <!-- <h5 class="brown">Brochure</h5>
                         <p>For more details download the  project brochure</p>
-                        <?php get_template_part('include/optin')?>
-                        <span>*no third parties | Spam free</span>
-                        <h5 class="brown mb-3 mt-5">Download Brochure</h5>
-                        <p><a href="#" class="btn btn-outline-primary"><i class="fas fa-file-pdf"></i>  EB5 Investment Brochure</a></p>
-                        <p><a href="#" class="btn btn-outline-primary"><i class="fas fa-file-pdf"></i>  Private Equity Brochure</a></p>
+                        <?php //get_template_part('include/optin')?>
+                        <span>*no third parties | Spam free</span> -->
+                        <?php if(get_field('brochure_button')): ?>
+                        <h5 class="brown mb-3">Baixar Apresentação</h5>
+                        <p><a href="<?php the_field('url') ?>" class="btn btn-outline-primary"><i class="fas fa-file-pdf"></i>  <?php the_field('brochure_button') ?></a></p>
+                        <!-- <p><a href="#" class="btn btn-outline-primary"><i class="fas fa-file-pdf"></i>  Private Equity Brochure</a></p> -->
+                        <?php endif;?>
+                        <?php if(get_field('video_button')):?>
                         <h5 class="brown mb-3 mt-5">Videos</h5>
-                        <p><a href="#" class="btn btn-outline-primary"><i class="fas fa-file-video"></i>  EB5 Investment Video</a></p>
-                        <p><a href="#" class="btn btn-outline-primary"><i class="fas fa-file-video"></i>  Private Equity Video</a></p>
+                        <p><a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-file-video"></i> <?php the_field('video_button')?></a></p>
+                        <!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Videos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <?php the_field('video_emeb')?>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        <?php endif;?>
                     </div>
                 </div>
             </div>

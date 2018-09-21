@@ -30,4 +30,11 @@ body.single {
       margin-bottom: 5px;
     }
   }
+  .modal-body {
+    iframe {
+      max-width: 100%;
+      height: 280px;
+      margin-bottom: 30px;
+    }
+  }
 }
