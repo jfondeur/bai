@@ -1,9 +1,22 @@
 footer.footer {
+  div.d-flex {
+    flex-direction: column;
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
   div[class*="footer"] {
-    width: calc(70% / 4);
+    width: 100%;
+    @include breakpoint(md) {
+      width: calc(70% / 4);
+    }
     text-align: left;
     .footerLogo {
       width: 70%;
+      @include breakpoint(xs) {
+        width: 30%;
+        margin-bottom: 20px;
+      }
     }
     a {
       color: initial;
@@ -12,7 +25,7 @@ footer.footer {
   }
   .newsletter {
     text-align: left;
-    width: 30% !important;
+    width: 60% !important;
     p {
       font-size: 14px;
     }

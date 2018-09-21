@@ -94,25 +94,50 @@ img {
 /* line 95, css/sass/style.scss */
 .infusion-form.form-inline .form-control {
   margin-right: 0 !important;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: 0;
   font-size: 14px;
   color: #6b4c2d;
 }
-/* line 103, css/sass/style.scss */
-.infusion-form.form-inline .btn {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+@media (min-width: 768px) {
+  /* line 95, css/sass/style.scss */
+  .infusion-form.form-inline .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 95, css/sass/style.scss */
+  .infusion-form.form-inline .form-control {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 108, css/sass/style.scss */
+  .infusion-form.form-inline .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 108, css/sass/style.scss */
+  .infusion-form.form-inline .btn {
+    width: 100%;
+  }
 }
 
-/* line 109, css/sass/style.scss */
+/* line 119, css/sass/style.scss */
 .card {
   overflow: hidden;
   border-radius: 14px;
 }
+@media (max-width: 767px) {
+  /* line 119, css/sass/style.scss */
+  .card {
+    margin-bottom: 30px !important;
+  }
+}
 
-/* line 117, css/sass/style.scss */
+/* line 130, css/sass/style.scss */
 .projectsModule .card .card-body .badge {
   margin-bottom: 0 !important;
 }
@@ -407,33 +432,56 @@ body.contact .gform_wrapper .gform_fields .gfield_error textarea {
 }
 
 /* line 2, css/sass/_footer.scss */
+footer.footer div.d-flex {
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  /* line 2, css/sass/_footer.scss */
+  footer.footer div.d-flex {
+    flex-direction: row;
+  }
+}
+/* line 8, css/sass/_footer.scss */
 footer.footer div[class*="footer"] {
-  width: calc(70% / 4);
+  width: 100%;
   text-align: left;
 }
-/* line 5, css/sass/_footer.scss */
+@media (min-width: 992px) {
+  /* line 8, css/sass/_footer.scss */
+  footer.footer div[class*="footer"] {
+    width: calc(70% / 4);
+  }
+}
+/* line 14, css/sass/_footer.scss */
 footer.footer div[class*="footer"] .footerLogo {
   width: 70%;
 }
-/* line 8, css/sass/_footer.scss */
+@media (max-width: 767px) {
+  /* line 14, css/sass/_footer.scss */
+  footer.footer div[class*="footer"] .footerLogo {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+/* line 21, css/sass/_footer.scss */
 footer.footer div[class*="footer"] a {
   color: initial;
   font-size: 14px;
 }
-/* line 13, css/sass/_footer.scss */
+/* line 26, css/sass/_footer.scss */
 footer.footer .newsletter {
   text-align: left;
-  width: 30% !important;
+  width: 60% !important;
 }
-/* line 16, css/sass/_footer.scss */
+/* line 29, css/sass/_footer.scss */
 footer.footer .newsletter p {
   font-size: 14px;
 }
-/* line 20, css/sass/_footer.scss */
+/* line 33, css/sass/_footer.scss */
 footer.footer .copyright {
   font-size: 14px;
 }
-/* line 22, css/sass/_footer.scss */
+/* line 35, css/sass/_footer.scss */
 footer.footer .copyright a {
   color: #6b4c2d;
 }

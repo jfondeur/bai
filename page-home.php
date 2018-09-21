@@ -10,7 +10,7 @@
                     <?php the_field('sales_pitch_text_1') ?>
                 </div>
                 <div class="col-md-6">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/home/benefits.png" alt="">
+                    <img src="<?php the_field('benefits_image'); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
                         <div class="card-body">
                             <h5 class="card-title brown">EB5</h5>
                             <p class="card-text"><?php the_field('investment_eb-5') ?></p>
-                            <a href="<?php echo home_url();?>/?page_id=51" class="btn btn-primary btn-sm">Learn more</a>
+                            <a href="<?php echo home_url();?>/?page_id=51" class="btn btn-primary btn-sm">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                         <div class="card-body">
                             <h5 class="card-title brown">Equity</h5>
                             <p class="card-text"><?php the_field('investment_equity') ?></p>
-                            <a href="<?php echo home_url();?>/?page_id=102" class="btn btn-primary btn-sm">Learn more</a>
+                            <a href="<?php echo home_url();?>/?page_id=102" class="btn btn-primary btn-sm">Saiba Mais</a>
                         </div>
                     </div>
                 </div>

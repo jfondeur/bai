@@ -94,21 +94,34 @@ img {
 .infusion-form.form-inline {
   .form-control {
     margin-right: 0 !important;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: 0;
     font-size: 14px;
     color: $primaryColor;
+    @include breakpoint(sm) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-right: 0;
+    }
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
   .btn {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    @include breakpoint(sm) {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 }
 //Card
 .card {
   overflow: hidden;
   border-radius: 14px;
+  @include breakpoint(xs) {
+    margin-bottom: 30px !important;
+  }
 }
 //Project
 .projectsModule {

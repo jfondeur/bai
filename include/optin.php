@@ -6,7 +6,7 @@
     <input name="inf_form_xid" type="hidden" value="6730495c336af971211de89344250e00" />
     <input name="inf_form_name" type="hidden" value="Web Form submitted" />
     <input name="infusionsoft_version" type="hidden" value="1.70.0.61250" />
-    <input class="infusion-field-input form-control mb-2 mr-sm-2" id="inf_field_Email" name="inf_field_Email" placeholder="Email *" type="text" value="" />
+    <input class="infusion-field-input form-control mb-2 mr-sm-2" id="inf_field_Email" name="inf_field_Email" placeholder="E-mail *" type="text" value="" />
     <input name="inf_custom_Source" type="hidden" value="<?php if (isset($utms)){ echo $utms[0]; }?>" />
-    <button class="btn btn-primary mb-2" type="submit">Submit</button>
+    <button class="btn btn-primary mb-2" type="submit">Enviar</button>
 </form>
