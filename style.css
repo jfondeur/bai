@@ -345,11 +345,11 @@ body.single .modal-body iframe {
 }
 
 /* line 4, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_footer {
+body.page-template-page-contact .gform_wrapper .gform_footer {
   text-align: center;
 }
 /* line 6, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_footer input[type="submit"] {
+body.page-template-page-contact .gform_wrapper .gform_footer input[type="submit"] {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -372,37 +372,37 @@ body.contact .gform_wrapper .gform_footer input[type="submit"] {
   margin: auto;
 }
 /* line 31, css/sass/_contact.scss */
-body.contact .gform_wrapper .validation_error {
+body.page-template-page-contact .gform_wrapper .validation_error {
   color: red;
   font-size: 12px;
   text-align: center;
   margin-bottom: 15px;
 }
 /* line 37, css/sass/_contact.scss */
-body.contact .gform_wrapper .validation_message {
+body.page-template-page-contact .gform_wrapper .validation_message {
   color: red;
   font-size: 12px;
 }
 /* line 41, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields {
+body.page-template-page-contact .gform_wrapper .gform_fields {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
 /* line 46, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields label {
+body.page-template-page-contact .gform_wrapper .gform_fields label {
   color: #6b4c2d;
   font-weight: 500;
 }
 /* line 50, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields .gfield {
+body.page-template-page-contact .gform_wrapper .gform_fields .gfield {
   flex-grow: 1;
   width: 50%;
   margin-bottom: 15px;
 }
 /* line 54, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields .gfield input {
+body.page-template-page-contact .gform_wrapper .gform_fields .gfield input {
   width: 95%;
   display: block;
   height: calc(2.25rem + 2px);
@@ -417,7 +417,7 @@ body.contact .gform_wrapper .gform_fields .gfield input {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 /* line 69, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields .gfield textarea {
+body.page-template-page-contact .gform_wrapper .gform_fields .gfield textarea {
   width: 97%;
   height: 200px;
   display: block;
@@ -432,8 +432,8 @@ body.contact .gform_wrapper .gform_fields .gfield textarea {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 /* line 86, css/sass/_contact.scss */
-body.contact .gform_wrapper .gform_fields .gfield_error input,
-body.contact .gform_wrapper .gform_fields .gfield_error textarea {
+body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error input,
+body.page-template-page-contact .gform_wrapper .gform_fields .gfield_error textarea {
   border-color: red;
 }
 
