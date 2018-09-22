@@ -7,20 +7,21 @@
 					</div>
 					<div class="footer-2">
 						<ul class="list-unstyled">
-							<li class="mb-2"><a href="#">Sobre BAI Capital</a></li>
-							<li class="mb-2"><a href="#">Projetos</a></li>
+							<li class="mb-2"><a href="/sobrebaicapital/">Sobre BAI Capital</a></li>
+							<li class="mb-2"><a href="/projetos-eb5/">Projetos EB5</a></li>
+							<li class="mb-2"><a href="/projetos-equity/">Projetos Equity</a></li>
 						</ul>
 					</div>
 					<div class="footer-3">
 						<ul class="list-unstyled">
-							<li class="mb-2"><a href="#">Investimentos em Equity</a></li>
-							<li class="mb-2"><a href="#">Vistos EB5</a></li>
+							<li class="mb-2"><a href="/investimento-equity/">Investimentos em Equity</a></li>
+							<li class="mb-2"><a href="/investimento-eb-5/">Vistos EB5</a></li>
 						</ul>
 					</div>
 					<div class="footer-4">
 						<ul class="list-unstyled">
-							<li class="mb-2"><a href="#">Blog</a></li>
-							<li class="mb-2"><a href="#">Imprensa</a></li>
+							<li class="mb-2"><a href="/blog/">Blog</a></li>
+							<!-- <li class="mb-2"><a href="#">Imprensa</a></li> -->
 						</ul>
 					</div>
 					<div class="newsletter footer-5">
