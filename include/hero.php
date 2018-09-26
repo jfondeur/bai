@@ -4,7 +4,7 @@
             <div class="row align-items-center h-100">
                 <div class="col-md-5">
                     <h2 class=""><?php the_field('hero_heading') ?></h2>
-                    <p class="text-justify"><?php the_field('hero_text') ?></p>
+                    <p><?php the_field('hero_text') ?></p>
                     <?php get_template_part('include/optin')?>
                 </div>
             </div>
