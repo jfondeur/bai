@@ -567,13 +567,13 @@ if (isset($_COOKIE['bai_utm'])) {
     }
     
 }
-
+//lead source referal
 if (isset($_SERVER['HTTP_REFERER'])){
 
     if (!isset($_COOKIE['leadsource'])) {
 
         $referer = $_SERVER['HTTP_REFERER'];
-        $cookie_expire = time() + 60*60*24*730;//730 days
+        $cookie_expire = time()+2592000*2;//60 days
 
         while (($data = $referer) !== FALSE)
         {
