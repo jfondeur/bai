@@ -19,6 +19,6 @@
     <input name="inf_custom_GoogleCampaign" type="hidden" value="<?php if (isset($utms)){ echo $utms[2]; }?>" />
     <input name="inf_custom_CampaignContent" type="hidden" value="<?php if (isset($utms)){ echo $utms[4]; }?>" />
     <input name="inf_custom_CampaignMedium" type="hidden" value="<?php if (isset($utms)){ echo $utms[1]; }?>" />
-    <input name="inf_field_LeadSourceId" type="hidden" value="<?php if (isset($leadsource)){ echo $leadsource; }?>" />
+    <input name="inf_custom_URLSource" type="hidden" value="<?php if (isset($leadsource)){ echo $leadsource; }?>" />
     <button class="btn btn-primary mb-2" type="submit">Enviar</button>
 </form>
