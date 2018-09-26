@@ -1,8 +1,12 @@
 <?php 
     //utm paramaters variables
     global $utms;
-    global $leadsource;
-    $referer = $leadsource;
+
+    if(isset($_COOKIE['leadsource'])) {
+        $leadsource = esc_url($_COOKIE['leadsource']);
+    } elseif(isset($_SERVER['HTTP_REFERER'])){
+        $leadsource = $_SERVER['HTTP_REFERER'];
+    }
 ?>
 
 <form accept-charset="UTF-8" action="https://qz363.infusionsoft.com/app/form/process/6730495c336af971211de89344250e00" class="infusion-form form-inline" id="inf_form_6730495c336af971211de89344250e00" method="POST">
@@ -15,6 +19,6 @@
     <input name="inf_custom_GoogleCampaign" type="hidden" value="<?php if (isset($utms)){ echo $utms[2]; }?>" />
     <input name="inf_custom_CampaignContent" type="hidden" value="<?php if (isset($utms)){ echo $utms[4]; }?>" />
     <input name="inf_custom_CampaignMedium" type="hidden" value="<?php if (isset($utms)){ echo $utms[1]; }?>" />
-    <input name="inf_field_LeadSourceId" type="hidden" value="<?php if (isset($referer)){ echo $referer; }?>" />
+    <input name="inf_field_LeadSourceId" type="hidden" value="<?php if (isset($leadsource)){ echo $referer; }?>" />
     <button class="btn btn-primary mb-2" type="submit">Enviar</button>
 </form>
