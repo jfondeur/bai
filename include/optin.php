@@ -3,7 +3,7 @@
     global $utms;
 
     if(isset($_COOKIE['leadsource'])) {
-        $leadsource = esc_url($_COOKIE['leadsource']);
+        $leadsource = $_COOKIE['leadsource'];
     } elseif(isset($_SERVER['HTTP_REFERER'])){
         $leadsource = $_SERVER['HTTP_REFERER'];
     }
