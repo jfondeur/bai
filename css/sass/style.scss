@@ -22,10 +22,50 @@
 $primaryColor: #6b4c2d;
 
 //fonts
+@font-face {
+  font-family: "Proxima Nova A";
+  src: url("fonts/proxima/ProximaNovaA-Bold.eot");
+  src: url("fonts/proxima/ProximaNovaA-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/proxima/ProximaNovaA-Bold.woff2") format("woff2"),
+    url("fonts/proxima/ProximaNovaA-Bold.woff") format("woff"),
+    url("fonts/proxima/ProximaNovaA-Bold.ttf") format("truetype"),
+    url("fonts/proxima/ProximaNovaA-Bold.svg#ProximaNovaA-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/proxima/ProximaNova-Regular.eot");
+  src: url("fonts/proxima/ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/proxima/ProximaNova-Regular.woff2") format("woff2"),
+    url("fonts/proxima/ProximaNova-Regular.woff") format("woff"),
+    url("fonts/proxima/ProximaNova-Regular.ttf") format("truetype"),
+    url("fonts/proxima/ProximaNova-Regular.svg#ProximaNova-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova A";
+  src: url("fonts/proxima/ProximaNovaA-Medium.eot");
+  src: url("fonts/proxima/ProximaNovaA-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/proxima/ProximaNovaA-Medium.woff2") format("woff2"),
+    url("fonts/proxima/ProximaNovaA-Medium.woff") format("woff"),
+    url("fonts/proxima/ProximaNovaA-Medium.ttf") format("truetype"),
+    url("fonts/proxima/ProximaNovaA-Medium.svg#ProximaNovaA-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
 // $headingFont: "Montserrat", sans-serif;
-$bodyFont: "Quattrocento", serif;
+$bodyFont: "Proxima Nova", serif;
 // $headingFont: 'Fanwood Text', serif;
-$headingFont: "Oswald", sans-serif;
+$headingFont: "Proxima Nova A", sans-serif;
 // Typefaces
 h1,
 h2,
@@ -33,6 +73,7 @@ h3,
 h4,
 h5 {
   font-family: $headingFont;
+  font-weight: bold;
 }
 p,
 span,
@@ -121,6 +162,11 @@ img {
   border-radius: 14px;
   @include breakpoint(xs) {
     margin-bottom: 30px !important;
+  }
+  .card-text {
+    @include breakpoint(md) {
+      //text-align: justify;
+    }
   }
 }
 //Project

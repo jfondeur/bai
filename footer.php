@@ -14,8 +14,8 @@
 					</div>
 					<div class="footer-3">
 						<ul class="list-unstyled">
-							<li class="mb-2"><a href="/investimento-equity/">Investimentos em Equity</a></li>
-							<li class="mb-2"><a href="/investimento-eb-5/">Vistos EB5</a></li>
+							<li class="mb-2"><a href="/investimento-equity/">Equity</a></li>
+							<li class="mb-2"><a href="/investimento-eb-5/">EB5</a></li>
 						</ul>
 					</div>
 					<div class="footer-4">
