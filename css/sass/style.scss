@@ -86,6 +86,11 @@ button,
 a {
   font-family: $bodyFont;
   font-size: 16px;
+  color: initial;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 .brown {
   color: $primaryColor;

@@ -11,13 +11,13 @@ body.page-template-page-investment {
     h2 {
       color: white;
       @include breakpoint(sm) {
-        color: $primaryColor;
+        // color: $primaryColor;
       }
     }
     p {
       color: white;
       @include breakpoint(sm) {
-        color: $primaryColor;
+        // color: $primaryColor;
       }
     }
     .row {
@@ -36,3 +36,9 @@ body.page-template-page-investment {
     }
   }
 }
+
+// body.page-id-102 {
+//   .baiHero {
+//     background-position: bottom !important;
+//   }
+// }

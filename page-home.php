@@ -57,7 +57,7 @@
                                 <a href="<?php echo $link ?>" class="brown"><h5 class="card-title"><?php echo $project_title;?></h5></a>
                                 <p class="card-text"><?php echo $location->name; ?></p>
                             </div>
-                            <p class="card-text badge badge-primary"><?php echo $c[0]->cat_name; ?></p>
+                            <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
                         </div>
                     </div>
                 </div>
@@ -80,38 +80,44 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <div class="card shadow">
-                        <!-- Image goes here -->
-                        <!-- Image goes here -->
-                         <?php 
-                        function img($imgfield, $size){
-                            $image = get_field($imgfield);
-                            $sizeeb = $size;
-                            if($image) :
-                                echo wp_get_attachment_image( $image, $sizeeb );
-                            endif;
-                        }
-                        img('investment_eb5_image', 'project');
-                        ?>
-                        <!-- Image goes here -->
-                        <div class="card-body">
-                            <h5 class="card-title brown">EB5</h5>
-                            <p class="card-text"><?php the_field('investment_eb-5') ?></p>
-                            <a href="<?php echo home_url();?>/?page_id=51" class="btn btn-primary btn-sm">Saiba Mais</a>
+                        <div class="card shadow">
+                            <!-- Image goes here -->
+                            <!-- Image goes here -->
+                             <a href="<?php echo home_url();?>/?page_id=51">
+                             <?php 
+                            function img($imgfield, $size){
+                                $image = get_field($imgfield);
+                                $sizeeb = $size;
+                                if($image) :
+                                    echo wp_get_attachment_image( $image, $sizeeb );
+                                endif;
+                            }
+                            img('investment_eb5_image', 'project');
+                            ?>
+                            </a>
+                            <!-- Image goes here -->
+                            <div class="card-body">
+                                 <a href="<?php echo home_url();?>/?page_id=51">
+                                    <h5 class="card-title brown">EB5</h5>
+                                </a>
+                                <p class="card-text"><?php the_field('investment_eb-5') ?></p>
+                            </div>
                         </div>
-                    </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card shadow">
-                        <!-- Image goes here -->
-                        <?php img('investment_equity_image', 'project');?>
-                        <!-- Image goes here -->
-                        <div class="card-body">
-                            <h5 class="card-title brown">Equity</h5>
-                            <p class="card-text"><?php the_field('investment_equity') ?></p>
-                            <a href="<?php echo home_url();?>/?page_id=102" class="btn btn-primary btn-sm">Saiba Mais</a>
+                    <a href="<?php echo home_url();?>/?page_id=102">
+                        <div class="card shadow">
+                            <!-- Image goes here -->
+                            <a href="<?php echo home_url();?>/?page_id=51">
+                            <?php img('investment_equity_image', 'project');?>
+                        </a>
+                            <!-- Image goes here -->
+                            <div class="card-body">
+                                <a href="<?php echo home_url();?>/?page_id=51"><h5 class="card-title brown">Equity</h5></a>
+                                <p class="card-text"><?php the_field('investment_equity') ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

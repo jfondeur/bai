@@ -65,7 +65,7 @@
                'walker'          => new bs4navwalker()
              ]);
         ?>
-				<?php get_template_part('include/optin');?>
+				<?php //get_template_part('include/optin');?>
       </div>
     </nav>
   </div>

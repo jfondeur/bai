@@ -12,6 +12,7 @@ header {
         li {
           a {
             font-size: 15px;
+            color: $primaryColor;
           }
         }
       }
@@ -41,12 +42,12 @@ header {
         }
         &:hover {
           background: $primaryColor;
-          color: white;
+          color: white !important;
         }
       }
       .dropdown-item.active {
         background: $primaryColor;
-        color: white;
+        color: white !important;
       }
     }
     //Boostrap menu hover

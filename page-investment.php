@@ -45,7 +45,7 @@ get_header();
                                 endif;
                                 ?>
                             </ul>
-                            <a href="#" class="btn btn-primary btn-sm">Download Brochure</a>
+                            <!-- <a href="#" class="btn btn-primary btn-sm">Download Brochure</a> -->
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ get_header();
                                         </a>
                                         <p class="card-text"><?php echo $location->name; ?></p>
                                     </div>
-                                    <p class="card-text badge badge-primary"><?php echo $c[0]->cat_name; ?></p>
+                                    <p class="card-text"><?php echo $c[0]->cat_name; ?></p>
                                 </div>
                             </div>
                         </div>
