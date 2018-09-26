@@ -1,7 +1,7 @@
 <?php 
     //utm paramaters variables
     global $utms;
-    $referer = wp_get_original_referer();
+    $referer = $_SERVER['HTTP_REFERER'];
 ?>
 
 <form accept-charset="UTF-8" action="https://qz363.infusionsoft.com/app/form/process/6730495c336af971211de89344250e00" class="infusion-form form-inline" id="inf_form_6730495c336af971211de89344250e00" method="POST">
