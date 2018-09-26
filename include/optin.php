@@ -3,7 +3,7 @@
     global $utms;
 
     if(isset($_COOKIE['leadsource'])) {
-        $leadsource = $_COOKIE['leadsource'];
+        $leadsource = esc_url($_COOKIE['leadsource']);
     } elseif(isset($_SERVER['HTTP_REFERER'])){
         $leadsource = $_SERVER['HTTP_REFERER'];
     }
@@ -19,6 +19,6 @@
     <input name="inf_custom_GoogleCampaign" type="hidden" value="<?php if (isset($utms)){ echo $utms[2]; }?>" />
     <input name="inf_custom_CampaignContent" type="hidden" value="<?php if (isset($utms)){ echo $utms[4]; }?>" />
     <input name="inf_custom_CampaignMedium" type="hidden" value="<?php if (isset($utms)){ echo $utms[1]; }?>" />
-    <input name="inf_field_LeadSourceId" type="hidden" value="<?php if (isset($leadsource)){ echo $referer; }?>" />
+    <input name="inf_field_LeadSourceId" type="hidden" value="<?php if (isset($leadsource)){ echo $leadsource; }?>" />
     <button class="btn btn-primary mb-2" type="submit">Enviar</button>
 </form>
