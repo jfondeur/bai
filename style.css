@@ -158,8 +158,12 @@ img {
     margin-bottom: 30px !important;
   }
 }
+/* line 166, css/sass/style.scss */
+.card .card-title {
+  margin-right: 20px;
+}
 
-/* line 176, css/sass/style.scss */
+/* line 179, css/sass/style.scss */
 .projectsModule .card .card-body .badge {
   margin-bottom: 0 !important;
 }

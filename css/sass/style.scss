@@ -163,6 +163,9 @@ img {
   @include breakpoint(xs) {
     margin-bottom: 30px !important;
   }
+  .card-title {
+    margin-right: 20px;
+  }
   .card-text {
     @include breakpoint(md) {
       //text-align: justify;
