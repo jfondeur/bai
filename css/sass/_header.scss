@@ -16,8 +16,14 @@ header {
         }
       }
     }
-    input.form-control {
-      padding: 0 10px;
+    form {
+      input.form-control {
+        padding: 0 10px;
+        margin-bottom: 0 !important;
+      }
+      button.btn {
+        margin-bottom: 0 !important;
+      }
     }
     .dropdown-toggle::after {
       display: none;

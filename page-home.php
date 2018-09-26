@@ -72,11 +72,13 @@
     <!-- why to invest -->
     <section class="">
         <div class="container homeInvestment">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     <h4 class="brown"><?php the_field('sales_pitch_heading_2') ?></h4>
                     <span class=""><?php the_field('sales_pitch_text_2') ?> </span>
                 </div>
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="card shadow">
                         <!-- Image goes here -->

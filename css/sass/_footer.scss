@@ -12,10 +12,12 @@ footer.footer {
     }
     text-align: left;
     .footerLogo {
-      width: 70%;
+      width: 30%;
+      margin-bottom: 20px;
       @include breakpoint(xs) {
-        width: 30%;
-        margin-bottom: 20px;
+      }
+      @include breakpoint(md) {
+        width: 70%;
       }
     }
     a {
@@ -26,6 +28,10 @@ footer.footer {
   .newsletter {
     text-align: left;
     width: 60% !important;
+    margin-top: 20px;
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
     p {
       font-size: 14px;
     }
