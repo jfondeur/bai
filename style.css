@@ -594,3 +594,8 @@ footer.footer .copyright {
 footer.footer .copyright a {
   color: #6b4c2d;
 }
+
+/* line 200, css/sass/style.scss */
+li.gform_validation_container {
+  display: none !important;
+}
